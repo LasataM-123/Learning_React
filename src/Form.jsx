@@ -8,9 +8,15 @@ const Form = () => {
       <div id="container1">
         <h2 id="title"> Get in touch with us</h2>
         <form id="form">
-          <label for="fname">FULL NAME: </label>
-          <label for="email">EMAIL ADDRESS: </label>
-          <br />
+          <div id="input">
+            <label htmlFor="fname" id="fullname">
+              FULL NAME:{" "}
+            </label>
+            <label htmlFor="email" id="mail">
+              EMAIL ADDRESS:
+            </label>
+          </div>
+
           <input type="text" name="fname" id="fname" placeholder="Name"></input>
           <input
             type="text"
@@ -19,7 +25,7 @@ const Form = () => {
             placeholder="Email"
           ></input>
           <br />
-          <label for="subject">SUBJECT: </label>
+          <label htmlFor="subject">SUBJECT: </label>
           <br />
           <input
             type="text"
@@ -28,7 +34,7 @@ const Form = () => {
             placeholder="Subject"
           ></input>
           <br />
-          <label for="message">MESSAGE: </label>
+          <label htmlFor="message">MESSAGE: </label>
           <br />
           <textarea
             type="text"
