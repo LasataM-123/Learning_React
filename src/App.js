@@ -1,11 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import Hello from './Hello';
-import Form from './Form';
+// import logo from "./logo.svg";
+import { useState } from "react";
+import "./App.css";
+// import Hello from "./Hello";
+// import Form from "./Form";
+// import Setstate from "./Setstate";
+import Calculator from "./Calculator";
 function App() {
   return (
     <div>
-      <Form/>
+      {/* <Form /> */}
+      {/* <Setstate /> */}
+      <Calculator />
     </div>
   );
 }
