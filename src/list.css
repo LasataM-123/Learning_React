@@ -1,0 +1,101 @@
+.container {
+  margin: 20px auto;
+  width: 500px;
+  height: 40em;
+  max-height: 50em;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(243, 68, 112),
+    rgb(230, 75, 75),
+    rgb(231, 22, 46)
+  );
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+.input {
+  display: flex;
+  width: 300px;
+  margin: 20px auto;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0 15px 15px 0px;
+  box-shadow: 1px 1px 2px 1px rgba(19, 19, 19, 0.8);
+}
+#addtask {
+  width: 80%;
+  font-size: 15px;
+  border: none;
+  padding: 10px;
+  margin: 0;
+}
+#add {
+  font-size: 15px;
+  padding: 10px;
+  background: none;
+  border: none;
+  width: 47px;
+  border-radius: 0 15px 15px 0px;
+  font-weight: bold;
+  color: rgb(30, 123, 229);
+}
+#add:hover {
+  color: black;
+  cursor: pointer;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+li {
+  list-style: square;
+  margin-left: -25px;
+}
+.task-container {
+  padding: 0px;
+  display: flex;
+  gap: 130px;
+  align-items: center;
+  font-size: 20px;
+}
+.container1 {
+  padding: 10px;
+  width: 280px;
+  margin: 0px auto;
+  background-color: white;
+  border: 1px solid black;
+
+  box-shadow: 1px 1px 2px 1px rgba(19, 19, 19, 0.8);
+}
+.button-container {
+  display: inline-flex;
+  gap: 10px;
+}
+.button-container button {
+  background: none;
+  border: none;
+  transform: scale(1.5);
+}
+#edit {
+  color: rgb(16, 85, 181);
+}
+#delete {
+  color: rgb(231, 22, 46);
+}
+#clear {
+  font-size: 15px;
+  padding: 15px;
+  background: none;
+  border: none;
+  color: rgb(231, 22, 46);
+}
+.update input {
+  font-size: 15.7px;
+  padding: 0px;
+}
+.update {
+  display: flex;
+}

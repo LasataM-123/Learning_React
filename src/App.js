@@ -4,13 +4,15 @@ import "./App.css";
 // import Hello from "./Hello";
 // import Form from "./Form";
 // import Setstate from "./Setstate";
-import Calculator from "./Calculator";
+// import Calculator from "./Calculator";
+import Todo from "./Todo";
 function App() {
   return (
     <div>
       {/* <Form /> */}
       {/* <Setstate /> */}
-      <Calculator />
+      {/* <Calculator /> */}
+      <Todo />
     </div>
   );
 }
