@@ -95,10 +95,10 @@ ul {
   cursor: pointer;
   transform: scale(1.65);
 }
-#edit {
+.button-container #edit {
   color: rgb(16, 85, 181);
 }
-#delete {
+.button-container #delete {
   color: rgb(231, 22, 46);
 }
 #clear {
