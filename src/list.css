@@ -2,7 +2,6 @@
   margin: 20px auto;
   width: 500px;
   height: 40em;
-  max-height: 50em;
   background-image: linear-gradient(
     to bottom,
     rgb(243, 68, 112),
@@ -76,7 +75,7 @@ ul {
 }
 .container1 {
   padding: 0px;
-  width: 280px;
+  width: 300px;
   margin: 0px auto;
   background-color: white;
   border: 1px solid black;
@@ -130,5 +129,5 @@ ul {
 }
 #update:hover {
   cursor: pointer;
-  transform: scale(1.7);
+  transform: scale(1.8);
 }
