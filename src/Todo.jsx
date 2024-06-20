@@ -55,7 +55,7 @@ const Todo = () => {
                         value={edittask}
                         onChange={(e) => setEdittask(e.target.value)}
                       ></input>
-                      <button onClick={() => updateTask(task.id)}>
+                      <button onClick={() => updateTask(task.id)} id="update">
                         <FontAwesomeIcon icon={faPenToSquare} />
                       </button>
                     </div>

@@ -43,6 +43,7 @@ h1 {
 #add:hover {
   color: black;
   cursor: pointer;
+  transform: scale(1.1);
 }
 ul {
   display: flex;
@@ -50,9 +51,21 @@ ul {
   align-items: center;
   gap: 20px;
 }
-li {
+.list li {
+  position: relative;
+  padding-bottom: 1em;
   list-style: square;
   margin-left: -25px;
+}
+
+.list li::after {
+  content: "";
+  width: 107%;
+  height: 1px;
+  background-color: #141414;
+  position: absolute;
+  bottom: 0;
+  left: -6%;
 }
 .task-container {
   padding: 0px;
@@ -62,7 +75,7 @@ li {
   font-size: 20px;
 }
 .container1 {
-  padding: 10px;
+  padding: 0px;
   width: 280px;
   margin: 0px auto;
   background-color: white;
@@ -79,6 +92,10 @@ li {
   border: none;
   transform: scale(1.5);
 }
+.button-container button:hover {
+  cursor: pointer;
+  transform: scale(1.65);
+}
 #edit {
   color: rgb(16, 85, 181);
 }
@@ -88,9 +105,15 @@ li {
 #clear {
   font-size: 15px;
   padding: 15px;
+  margin: 1px;
   background: none;
   border: none;
   color: rgb(231, 22, 46);
+}
+#clear:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  color: rgb(168, 4, 45);
 }
 .update input {
   font-size: 15.7px;
@@ -98,4 +121,14 @@ li {
 }
 .update {
   display: flex;
+}
+#update {
+  background: none;
+  border: none;
+  transform: scale(1.6);
+  color: rgb(220, 141, 38);
+}
+#update:hover {
+  cursor: pointer;
+  transform: scale(1.7);
 }
