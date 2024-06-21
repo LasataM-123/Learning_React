@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Color.css";
 const Color = () => {
-  const [bgcolor, setBgcolor] = useState("");
+  const [bgcolor, setBgcolor] = useState("white");
   const handleColourChange = () => {
     const colors = [
       "red",
