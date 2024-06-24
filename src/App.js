@@ -7,11 +7,12 @@ import Color from "./Color";
 import DynamicTitle from "./DynamicTitle";
 import LogOnMount from "./LogOnMount";
 import Timer from "./Timer";
+import Quiz from "./Quiz";
 
 function App() {
   return (
     <div>
-      <Color />
+      <Quiz />
     </div>
   );
 }
