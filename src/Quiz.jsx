@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Quiz.css";
 const Quiz = () => {
   const questions = [
@@ -79,6 +79,9 @@ const Quiz = () => {
     newAnswers[questionIndex] = tickedOption;
     setAnswers(newAnswers);
   };
+  useEffect(() => {
+    console.log("Score: " + score);
+  }, [score]);
 
   const handleSubmit = () => {
     let allAnswered = true;
@@ -127,6 +130,9 @@ const Quiz = () => {
                 {question.options.map((option, optionIndex) => {
                   const isSelected = answers[questionIndex] === option;
                   const isCorrect = option === question.answer;
+                  const hasSelectedWrong =
+                    answers[questionIndex] !== null &&
+                    answers[questionIndex] !== question.answer;
                   return (
                     <li
                       key={optionIndex}
@@ -140,8 +146,13 @@ const Quiz = () => {
                           ? isCorrect
                             ? "green"
                             : "red"
+                          : hasSelectedWrong && isCorrect
+                          ? "green"
                           : "transparent",
-                        color: isSelected ? "white" : "black",
+                        color:
+                          isSelected || (hasSelectedWrong && isCorrect)
+                            ? "white"
+                            : "black",
                       }}
                     >
                       {option}
