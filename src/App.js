@@ -3,16 +3,16 @@ import "./App.css";
 // import Calculator from "./Calculator";
 // import Todo from "./Todo";
 // import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Color from "./Color";
-import DynamicTitle from "./DynamicTitle";
-import LogOnMount from "./LogOnMount";
-import Timer from "./Timer";
-import Quiz from "./Quiz";
+// import Color from "./Color";
+// import DynamicTitle from "./DynamicTitle";
+// import LogOnMount from "./LogOnMount";
+import Polysure from "./Polysure";
+// import Timer from "./Timer";
 
 function App() {
   return (
     <div>
-      <Quiz />
+      <Polysure />
     </div>
   );
 }
