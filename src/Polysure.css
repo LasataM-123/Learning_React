@@ -1,6 +1,6 @@
 .box {
   height: 1000px;
-  width: 100%;
+  width: 140%;
 }
 .navbar {
   align-items: center;
@@ -9,8 +9,8 @@
   border-bottom-width: 1px;
   border-color: #515151;
   display: flex;
-  gap: 68px;
-  height: 100px;
+  gap: 90px;
+  height: 90px;
   justify-content: center;
   position: relative;
   width: 100%;
@@ -26,20 +26,21 @@
   position: relative;
   white-space: nowrap;
   width: fit-content;
-  margin-left: 105px;
+  margin-left: -18%;
 }
 
 .navbar .group {
   height: 50px;
   position: relative;
   width: 1027px;
+  margin-left: 10px;
 }
 
 .navbar .div {
   align-items: flex-start;
   display: inline-flex;
   gap: 35px;
-  left: 0;
+  left: 0px;
   position: absolute;
   top: 14px;
 }
@@ -130,7 +131,7 @@
 
 .box1 .banner-description {
   height: 188px;
-  left: 8%;
+  left: 6%;
   position: relative;
   top: 25%;
   width: 1412px;
@@ -151,7 +152,7 @@
 
 .box1 .description-and {
   height: 188px;
-  left: 730px;
+  left: 765px;
   position: absolute;
   top: 0;
   width: 572px;
@@ -190,7 +191,7 @@
 .box1 .div {
   color: #ffffff;
   font-family: "Roboto-Regular", Helvetica;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
@@ -219,7 +220,7 @@
 .box1 .learn {
   color: #1e1e1e;
   font-family: "Roboto-Regular", Helvetica;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
@@ -229,18 +230,18 @@
 }
 .family-box-container {
   display: flex;
-  gap: 20px;
+  gap: 75px;
 }
 .box2 {
   height: 400px;
-  width: 470px;
+  width: 430px;
 }
 
 .box2 .card-content {
   height: 300px;
-  left: 58%;
+  left: 70%;
   position: relative;
-  top: 50%;
+  top: 55%;
   width: 430px;
 }
 
@@ -256,6 +257,7 @@
   position: absolute;
   top: 0;
   width: 430px;
+  object-fit: cover;
 }
 
 .box2 .div {
@@ -303,7 +305,7 @@
 }
 
 .box2 .arrow {
-  background-color: #ffffff;
+  background-color: #000000;
   border: 4px solid;
   border-color: #29b6f3;
   border-radius: 30px;
@@ -315,23 +317,23 @@
 }
 
 .box2 .solar-arrow-up {
-  height: 25px;
-  left: 8px;
+  height: 20px;
+  left: 11px;
   position: absolute;
-  top: 8px;
-  width: 25px;
+  top: 10px;
+  width: 20px;
 }
 
 .box3 {
   height: 400px;
-  width: 470px;
+  width: 430px;
 }
 
 .box3 .card-content {
   height: 300px;
-  left: 50%;
+  left: 60%;
   position: relative;
-  top: 50%;
+  top: 55%;
   width: 430px;
 }
 
@@ -347,6 +349,7 @@
   position: absolute;
   top: 0;
   width: 430px;
+  object-fit: cover;
 }
 
 .box3 .div {
@@ -394,7 +397,7 @@
 }
 
 .box3 .arrow {
-  background-color: #ffffff;
+  background-color: #000000;
   border: 4px solid;
   border-color: #ee6352;
   border-radius: 30px;
@@ -406,11 +409,103 @@
 }
 
 .box3 .solar-arrow-up {
-  height: 25px;
-  left: 8px;
+  height: 20px;
+  left: 11px;
   position: absolute;
-  top: 8px;
-  width: 25px;
+  top: 10px;
+  width: 20px;
+}
+
+.box4 {
+  height: 400px;
+  width: 430px;
+}
+
+.box4 .card-content {
+  height: 300px;
+  left: 50%;
+  position: relative;
+  top: 55%;
+  width: 430px;
+}
+
+.box4 .overlap-group {
+  height: 300px;
+  position: relative;
+}
+
+.box4 .rectangle {
+  border-radius: 30px 30px 0px 0px;
+  height: 250px;
+  left: 0px;
+  position: absolute;
+  top: 0;
+  width: 430px;
+  object-fit: cover;
+}
+
+.box4 .div {
+  background-color: #f9c809;
+  border-radius: 0px 0px 30px 30px;
+  height: 170px;
+  left: 0;
+  position: absolute;
+  top: 250px;
+  width: 430px;
+}
+
+.box4 .card-text {
+  height: 95px;
+  left: 32px;
+  position: absolute;
+  top: 290px;
+  width: 340px;
+}
+
+.box4 .individuals-family {
+  color: #000000;
+  font-family: "Roboto-Medium", Helvetica;
+  font-size: 25px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.box4 .text-wrapper {
+  color: #000000;
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 14.5px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 25px;
+  position: absolute;
+  top: 30px;
+  width: 340px;
+}
+
+.box4 .arrow {
+  background-color: #000000;
+  border: 4px solid;
+  border-color: #f9c809;
+  border-radius: 30px;
+  height: 40px;
+  left: 340px;
+  position: absolute;
+  top: 220px;
+  width: 40px;
+}
+
+.box4 .solar-arrow-up {
+  height: 20px;
+  left: 11px;
+  position: absolute;
+  top: 10px;
+  width: 20px;
 }
 .left-arrow {
   height: 60px;
@@ -420,11 +515,11 @@
   height: 60px;
   left: 110px;
   position: relative;
-  top: -50px;
+  top: -70px;
   width: 60px;
 }
 .left-arrow .left {
-  background-color: #575656;
+  background-color: #3a3a3a;
   border-radius: 30px;
   left: 0px;
   height: 60px;
@@ -446,14 +541,14 @@
   height: 60px;
   left: 110px;
   position: relative;
-  top: -30px;
+  top: -50px;
   width: 60px;
 }
 .right-arrow img {
   transform: rotate(180deg);
 }
 .right-arrow .right {
-  background-color: #575656;
+  background-color: #3a3a3a;
   border-radius: 30px;
   left: 0px;
   height: 60px;
@@ -465,4 +560,24 @@
   position: absolute;
   top: 15px;
   width: 30px;
+}
+.box5 {
+  height: 180px;
+  left: 0;
+  top: 18%;
+  position: relative;
+  width: 100%;
+  background-color: #d9d9d9;
+}
+.box5 .frame {
+  margin-top: 65px;
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 80px;
+  position: relative;
+}
+.box5 .frame .image {
+  height: 60px;
+  position: relative;
+  width: 222px;
 }

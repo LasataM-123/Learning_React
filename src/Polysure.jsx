@@ -1,5 +1,12 @@
 import React from "react";
 import "./Polysure.css";
+import Box2 from "./assets/Rectangle 7.svg";
+import Box3 from "./assets/Rectangle 8.svg";
+import Box4 from "./assets/Rectangle 9.svg";
+import Uparrow from "./assets/Vector.svg";
+import Arrow from "./assets/Arrow.svg";
+import Adobe from "./assets/Adobe.svg";
+import { Right, Left } from "./Button";
 const Polysure = () => {
   return (
     <div className="box">
@@ -44,11 +51,7 @@ const Polysure = () => {
         <div className="box2">
           <div className="card-content">
             <div className="overlap-group">
-              <img
-                className="rectangle"
-                alt="Rectangle"
-                src="https://t4.ftcdn.net/jpg/03/18/73/27/360_F_318732794_h8kaFAiGkKsMlCquuFJlg5bKqGEXtJSR.jpg"
-              />
+              <img className="rectangle" alt="Rectangle" src={Box2} />
               <div className="div" />
               <div className="card-text">
                 <div className="individuals-family">
@@ -63,7 +66,7 @@ const Polysure = () => {
                 <img
                   className="solar-arrow-up"
                   alt="Solar arrow up"
-                  src="https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/DiagonalArrowUpRight-512.png"
+                  src={Uparrow}
                 />
               </div>
             </div>
@@ -72,11 +75,7 @@ const Polysure = () => {
         <div className="box3">
           <div className="card-content">
             <div className="overlap-group">
-              <img
-                className="rectangle"
-                alt="Rectangle"
-                src="https://www.glam.com/img/gallery/what-to-expect-from-family-therapy/intro-1673553290.jpg"
-              />
+              <img className="rectangle" alt="Rectangle" src={Box3} />
               <div className="div" />
               <div className="card-text">
                 <div className="individuals-family">
@@ -91,7 +90,31 @@ const Polysure = () => {
                 <img
                   className="solar-arrow-up"
                   alt="Solar arrow up"
-                  src="https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/DiagonalArrowUpRight-512.png"
+                  src={Uparrow}
+                />
+              </div>
+            </div>
+          </div>
+        </div>{" "}
+        <div className="box4">
+          <div className="card-content">
+            <div className="overlap-group">
+              <img className="rectangle" alt="Rectangle" src={Box4} />
+              <div className="div" />
+              <div className="card-text">
+                <div className="individuals-family">
+                  Individuals &amp; Family
+                </div>
+                <p className="text-wrapper">
+                  We help a proper send-off and help your family keep living
+                  their best life in your absence.
+                </p>
+              </div>
+              <div className="arrow">
+                <img
+                  className="solar-arrow-up"
+                  alt="Solar arrow up"
+                  src={Uparrow}
                 />
               </div>
             </div>
@@ -100,24 +123,22 @@ const Polysure = () => {
       </div>
       <div className="left-arrow">
         <div className="group">
-          <div className="left">
-            <img
-              className="solar-arrow-up"
-              alt="Solar arrow up"
-              src="https://th.bing.com/th/id/R.757dcae10509bdbcbbbe7231f9cec8ab?rik=7RO2A7Du7jYBww&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fleft-arrow-png-left-icon-1600.png&ehk=nQr%2fWbRJHtKEaV53ijq71OpNptgpG4FZxnChrIO0fBI%3d&risl=&pid=ImgRaw&r=0"
-            ></img>
-          </div>
+          <Left />
         </div>
       </div>
       <div className="right-arrow">
         <div className="group">
-          <div className="right">
-            <img
-              className="solar-arrow-up"
-              alt="Solar arrow up"
-              src="https://th.bing.com/th/id/R.757dcae10509bdbcbbbe7231f9cec8ab?rik=7RO2A7Du7jYBww&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fleft-arrow-png-left-icon-1600.png&ehk=nQr%2fWbRJHtKEaV53ijq71OpNptgpG4FZxnChrIO0fBI%3d&risl=&pid=ImgRaw&r=0"
-            ></img>
-          </div>
+          <Right />
+        </div>
+      </div>
+      <div className="box5">
+        <div className="frame">
+          <img className="image" alt="Image" src={Adobe} />
+          <img className="image" alt="Image" src={Adobe} />
+          <img className="image" alt="Image" src={Adobe} />
+          <img className="image" alt="Image" src={Adobe} />
+          <img className="image" alt="Image" src={Adobe} />
+          <img className="image" alt="Image" src={Adobe} />
         </div>
       </div>
     </div>
