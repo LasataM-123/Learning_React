@@ -4,7 +4,6 @@ import Box2 from "./assets/Rectangle 7.svg";
 import Box3 from "./assets/Rectangle 8.svg";
 import Box4 from "./assets/Rectangle 9.svg";
 import Uparrow from "./assets/Vector.svg";
-import Arrow from "./assets/Arrow.svg";
 import Adobe from "./assets/Adobe.svg";
 import { Right, Left } from "./Button";
 const Polysure = () => {
