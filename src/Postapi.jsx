@@ -3,6 +3,7 @@ import axios from "axios";
 const Postapi = () => {
   //const navigate = useNavigate();
   const [todayDate, setTodayDate] = useState("");
+  const [deleteId, setDeleteId] = useState("");
   const [loading, setLoading] = useState(false);
   const [ariesData, setAriesData] = useState({});
   const [formData, setFormData] = useState({
@@ -81,7 +82,6 @@ const Postapi = () => {
   };
   const todayData = async () => {
     try {
-      console.log(`https://aligned.corvo.com.np/api/aries/${todayDate}`);
       const response = await axios.get(
         `https://aligned.corvo.com.np/api/aries/${todayDate}`
       );
@@ -90,6 +90,19 @@ const Postapi = () => {
       setAriesData(response.data);
     } catch (error) {
       console.log("Error: ", error);
+    }
+  };
+  const handleDelete = (e) => {
+    setDeleteId(e.target.value);
+  };
+  const Delete = async () => {
+    try {
+      const response = await axios.delete(
+        `https://aligned.corvo.com.np/api/aries/${deleteId}`
+      );
+      alert("Deleted successfully");
+    } catch (error) {
+      console.log("error in deleting: ", error);
     }
   };
   return (
@@ -206,21 +219,31 @@ const Postapi = () => {
         />
         <button onClick={todayData}>Get today Data</button>
         <br />
+
+        <br />
+        <div>
+          <h3>Date: {ariesData.date}</h3>
+          <p>Description: {ariesData.description}</p>
+          <p>Lucky Number: {ariesData.luckyNumber}</p>
+          <p>Lucky Color: {ariesData.luckyColor}</p>
+          <p>Remedy: {ariesData.remedy}</p>
+          <p>Health Rating: {ariesData.healthRating}</p>
+          <p>Wealth Rating: {ariesData.wealthRating}</p>
+          <p>Family Rating: {ariesData.familyRating}</p>
+          <p>Love Matters Rating: {ariesData.loveMattersRating}</p>
+          <p>Occupation Rating: {ariesData.occupationRating}</p>
+          <p>Married Life Rating: {ariesData.marriedLifeRating}</p>
+        </div>
+        <h2>Delete horoscope data</h2>
+        <label htmlFor="deleteId">Enter Id to delete: </label>
+        <input
+          type="text"
+          name="deleteId"
+          value={deleteId}
+          onChange={handleDelete}
+        />
+        <button onClick={Delete}>Delete</button>
       </form>
-      <br />
-      <div>
-        <h3>Date: {ariesData.date}</h3>
-        <p>Description: {ariesData.description}</p>
-        <p>Lucky Number: {ariesData.luckyNumber}</p>
-        <p>Lucky Color: {ariesData.luckyColor}</p>
-        <p>Remedy: {ariesData.remedy}</p>
-        <p>Health Rating: {ariesData.healthRating}</p>
-        <p>Wealth Rating: {ariesData.wealthRating}</p>
-        <p>Family Rating: {ariesData.familyRating}</p>
-        <p>Love Matters Rating: {ariesData.loveMattersRating}</p>
-        <p>Occupation Rating: {ariesData.occupationRating}</p>
-        <p>Married Life Rating: {ariesData.marriedLifeRating}</p>
-      </div>
     </div>
   );
 };
