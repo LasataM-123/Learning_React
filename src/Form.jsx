@@ -10,7 +10,6 @@ const Form = ({ onSubmit }) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-    console.log(formData);
   };
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevents the default form submission behavior
@@ -71,9 +70,8 @@ const Form = ({ onSubmit }) => {
             onChange={handleChange}
           ></textarea>
           <br />
+          <button type="submit">Send Message</button>
         </form>
-
-        <button type="submit">Send Message</button>
       </div>
     </div>
   );

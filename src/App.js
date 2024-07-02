@@ -10,29 +10,35 @@ import Form from "./Form";
 // import LogOnMount from "./LogOnMount";
 import Polysure from "./Polysure";
 
+import Cal from "./Cal";
+import { API } from "./API";
+import HoroscopeComponent from "./Horoscope";
+import { Aries } from "./Aries";
+import Postapi from "./Postapi";
+
 // import Timer from "./Timer";
 
 function App() {
   // const firstName = "Lasata";
   // const lastName = "Maharjan";
-  const [submittedData, setSubmittedData] = useState({});
-  const handleSubmittedData = (data) => {
-    setSubmittedData(data);
-    console.log("app " + submittedData);
-  };
+  // const [submittedData, setSubmittedData] = useState({});
+  // const handleSubmittedData = (data) => {
+  //   setSubmittedData(data);
+  // };
   return (
     <div>
+      <Postapi />
       {/* using props to pass value to the other component */}
       {/* <DisplayName firstName={firstName} lastName={lastName} />
       <DisplayName firstName={"Luniva"} lastName={"Shrestha"} />
       <DisplayName firstName={"Shruti"} lastName={"Munikar"} /> */}
-      <Form onSubmit={handleSubmittedData} />
+      {/* <Form onSubmit={handleSubmittedData} />
       <DisplayName
         FullName={submittedData.fullName}
         Email={submittedData.email}
         Subject={submittedData.subject}
         Message={submittedData.message}
-      />
+      /> */}
     </div>
   );
 }
