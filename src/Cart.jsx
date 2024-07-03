@@ -33,6 +33,7 @@ const Cart = () => {
             <li key={item.cartId}>
               <p>Cart Id: {item.cartId}</p>
               <p>Customer Name:{item.customerName}</p>
+              <p>Cutomer Id: {item.customerID}</p>
               <p>Total: {item.total}</p>
               <ul>
                 Items:

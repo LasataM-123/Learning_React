@@ -16,6 +16,7 @@ import HoroscopeComponent from "./Horoscope";
 import { Aries } from "./Aries";
 import Postapi from "./Postapi";
 import Cart from "./Cart";
+import PostCart from "./PostCart";
 
 // import Timer from "./Timer";
 
@@ -28,7 +29,7 @@ function App() {
   // };
   return (
     <div>
-      <Cart />
+      <PostCart />
       {/* using props to pass value to the other component */}
       {/* <DisplayName firstName={firstName} lastName={lastName} />
       <DisplayName firstName={"Luniva"} lastName={"Shrestha"} />
