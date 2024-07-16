@@ -1,0 +1,15 @@
+{
+  "customerName": "string",
+  "customerID": "string",
+  "total": "0",
+  "items": [
+    { "productId": "0", "itemName": "string", "price": "0", "quantity": "0" }
+  ],
+  "billingAddressData": {
+    "customerID": "string",
+    "locationName": "string",
+    "city": "string",
+    "address": "string",
+    "phoneNumber": "string"
+  }
+}

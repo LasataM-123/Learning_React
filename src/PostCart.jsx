@@ -3,22 +3,18 @@ import React, { useState } from "react";
 
 const PostCart = () => {
   const [formData, setFormData] = useState({
-    cartId: 0,
     customerName: "",
     customerID: "",
     total: "",
     items: [
       {
-        id: "",
         productId: "",
         itemName: "",
         price: "",
         quantity: "",
-        cartId: 0,
       },
     ],
     billingAddressData: {
-      billingID: "",
       customerID: "",
       locationName: "",
       city: "",
@@ -51,21 +47,17 @@ const PostCart = () => {
     try {
       const formDataToSend = new FormData();
       const formObjectToSend = {
-        cartId: 0,
         customerName: formData.customerName,
         customerID: formData.customerID,
         total: formData.total,
         items: formData.items.map((item) => ({
-          id: item.id,
           productId: item.productId,
           itemName: item.itemName,
           price: item.price,
           quantity: item.quantity,
-          cartId: 0,
         })),
 
         billingAddressData: {
-          billingID: formData.billingAddressData.billingID,
           customerID: formData.billingAddressData.customerID,
           locationName: formData.billingAddressData.locationName,
           city: formData.billingAddressData.city,
@@ -76,7 +68,7 @@ const PostCart = () => {
       console.log("At the time of submit: ", JSON.stringify(formObjectToSend));
       setLoading(true);
       const response = await axios.post(
-        "https://aligned.corvo.com.np/api/Cart",
+        "https://aligned.corvo.com.np/api/Cart?email=lasatamaharjan2006@gmail.com",
         JSON.stringify(formObjectToSend),
         {
           headers: {
@@ -86,7 +78,7 @@ const PostCart = () => {
       );
       console.log("Form data to send", formDataToSend);
       console.log("Response: ", response);
-      if (response.status === 201) {
+      if (response.status === 200) {
         alert("Cart data added successfully");
       } else {
         alert("Failed to add cart data. Please Try again.");
@@ -129,17 +121,7 @@ const PostCart = () => {
           <p style={{ fontSize: "20px", marginLeft: "-0.1px" }}>Items: </p>
           {formData.items.map((item, index) => (
             <div key={index}>
-              <li>
-                <label htmlFor="id">Id: </label>
-                <input
-                  type="text"
-                  name="id"
-                  value={item.id}
-                  onChange={(e) =>
-                    handleItemChange(index, "id", e.target.value)
-                  }
-                ></input>
-              </li>
+              <li></li>
               <li>
                 <label htmlFor="productId">Product Id: </label>
                 <input
@@ -191,15 +173,7 @@ const PostCart = () => {
           <p style={{ fontSize: "20px", marginLeft: "-0.1px" }}>
             Billing Address Data:{" "}
           </p>
-          <li>
-            <label htmlFor="billingID">Billing Id: </label>
-            <input
-              type="text"
-              name="billingID"
-              value={formData.billingAddressData.billingID}
-              onChange={(e) => handleBillingChange("billingID", e.target.value)}
-            ></input>
-          </li>
+          <li></li>
           <li>
             <label htmlFor="customerID">Customer Id: </label>
             <input

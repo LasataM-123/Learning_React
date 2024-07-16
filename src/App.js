@@ -17,6 +17,7 @@ import { Aries } from "./Aries";
 import Postapi from "./Postapi";
 import Cart from "./Cart";
 import PostCart from "./PostCart";
+import { MaterialUI } from "./MaterialUI";
 
 // import Timer from "./Timer";
 
@@ -29,7 +30,8 @@ function App() {
   // };
   return (
     <div>
-      <PostCart />
+      <MaterialUI />
+      {/* <PostCart /> */}
       {/* using props to pass value to the other component */}
       {/* <DisplayName firstName={firstName} lastName={lastName} />
       <DisplayName firstName={"Luniva"} lastName={"Shrestha"} />
